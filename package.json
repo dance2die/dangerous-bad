@@ -1,12 +1,19 @@
 {
-  "name": "Dangerous",
-  "version": "1.0.0",
+  "name": "dangerous",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "webpack-dashboard -- node src/index.js",
+    "build": "webpack --mode=development",
+    "watch": "webpack-dashboard -- webpack --mode=development --watch"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "component",
+    "dangerous"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -16,6 +23,7 @@
     "babel-loader": "^8.0.5",
     "webpack": "^4.28.1",
     "webpack-cli": "^3.2.1",
+    "webpack-dashboard": "^2.0.0",
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {

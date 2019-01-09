@@ -1,6 +1,7 @@
 // Created on https://webpack.jakoblind.no/
 const webpack = require("webpack");
 const path = require("path");
+var DashboardPlugin = require("webpack-dashboard/plugin");
 
 const config = {
   entry: "./src/index.js",
@@ -19,7 +20,8 @@ const config = {
   },
   resolve: {
     extensions: [".js", ".jsx"]
-  }
+  },
+  plugins: [new DashboardPlugin()]
 };
 
 module.exports = config;
