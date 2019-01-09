@@ -30,7 +30,8 @@
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-hot-loader": "^4.6.3"
+    "react-hot-loader": "^4.6.3",
+    "react-is": "^16.7.0"
   },
   "babel": {
     "presets": [
